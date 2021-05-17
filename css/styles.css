@@ -1,0 +1,624 @@
+/* === font-face === */
+@font-face {
+    font-family: "Raleway Black";
+    src: url(fonts/Raleway-Black.ttf);
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Open Sans Thin";
+    src: url(fonts/OpenSans-Light.ttf);
+}
+
+/* === Css général === */
+html {
+    background-color: #303030;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Raleway Black", sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-size: 4rem;
+    padding: 100px 0 0 0;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 0.85;
+}
+
+.sousTitre {
+    margin: 0 0 50px 0;
+    font-family: "Open Sans Thin", sans-serif;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+
+p a {
+    display: inline;
+    text-decoration: underline;
+}
+
+p a:hover {
+    color: #00c6ff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+}
+
+button:focus, a:focus {
+    outline:0;
+}
+
+/* === Menu === */
+.menu {
+    list-style: none;
+    text-align: left;
+    position: fixed;
+    top: 30%;
+    z-index: 1;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.menu li a:before {
+    content: "";
+    width: 30px;
+    border-bottom: solid white 2px;
+    height: 0.5rem;
+    margin-right: 10px;
+    margin-left: 40px;
+    -webkit-transition: width 0.5s, margin 0.5s; /* Safari */
+    transition: width 0.5s, margin 0.5s;
+}
+
+.menu li {
+    margin: 50px 0 50px 0;
+}
+
+.menu li:hover a:before {
+    content: "";
+    width: 60px;
+    margin: 0 30px 0 10px;
+}
+
+.hamburger {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 2.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    background : none;
+    border: none;
+    z-index: 10;
+    padding: 2rem;
+    box-sizing: content-box;
+    display: none;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 0.25rem;
+    border-radius: 4px;
+    background: #fff;
+    border-radius: 0.125rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.hamburger.close span {
+    background: white;
+}
+
+.hamburger.close span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.close span:first-child {
+    /*transform: translate(0, 0.65625rem) rotate(45deg);*/
+    transform: translateY(1.125rem) rotate(45deg);
+    width: 100%;
+}
+
+.hamburger.close span:last-of-type {
+    /*transform: translate(0, -0.65625rem) rotate(-45deg);*/
+    transform: translateY(-1.125rem) rotate(-45deg);
+    width: 100%;
+}
+
+/* === Zone-hero === */
+#zoneHero {
+    background-image: url('../images/bg1-1x.jpg');
+    background-image: -webkit-image-set( url('../images/bg1-1x.jpg') 1x, url('../images/bg1-2x.jpg') 2x );
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #00c6ff;
+    position: relative;
+}
+
+#zoneHero h1 {
+    font-size: 9.75rem;
+    line-height: 0.85;
+    text-align: left;
+}
+
+#zoneHero p {
+    font-size: 2.5rem;
+    letter-spacing: .5rem;
+    margin: 0;
+    text-align: right;
+}
+
+.scrollToAction {
+    position: absolute;
+    width: 2%;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* === Section compétences === */
+#competences {
+    background-color: #00c6ff;
+    padding-bottom: 100px;
+}
+
+#competences .contenu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#competences .contenu > div {
+    width: 20%;
+}
+
+#competences .contenu > div .uneLigne {
+    line-height: 3.4rem;
+}
+
+/* ==== section projets ==== */
+.projetsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projetsContainer .projet {
+    width: 50%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projetsContainer .projet p, .projetsContainer .projet ul {
+    line-height: 1.3;
+}
+
+.projetsContainer .projet .projetLink {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.projetsContainer .projet .projetLink .imageProjet {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.projetsContainer .projet .projetLink .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.projetsContainer .projet .projetLink .middle .texte {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.projetsContainer .projet .projetLink .middle .texte h3 {
+    color: #00c6ff;
+}
+
+.projetsContainer .projet .projetLink:hover .imageProjet {
+    opacity: 0.4;
+}
+
+.projetsContainer .projet .projetLink:hover .middle {
+    opacity: 1;
+}
+
+.projetsContainer .projet .popinContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    z-index: 50;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s ease-in-out;
+}
+
+.projetsContainer .projet .popinContainer .popin {
+    width: 1700px;
+    max-width: 80vw;
+    max-height: 90vh;
+    padding: 2rem;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    background: #303030;
+    transform: scale(0);
+    transition: all 0.25s ease-in-out;
+}
+
+.projetsContainer .projet .popinContainer.open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.projetsContainer .projet .popinContainer.open .popin {
+    transform: none;
+    position: relative;
+}
+
+.projetsContainer .projet .popinContainer .popin.split {
+    padding: 0;
+}
+
+.projetsContainer .projet .popinContainer .popin.split {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projetsContainer .projet .popinContainer .popin.split .droite {
+    padding: 2rem;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.projetsContainer .projet .popinContainer .popin.split .gauche {
+    width: 50%;
+}
+
+.projetsContainer .projet .popinContainer .popin h3 {
+    color: #00c6ff;
+    font-size: 3rem;
+    line-height: 1.33;
+    border-bottom: solid #00c6ff 2px;
+    margin-bottom: 10px;
+    padding-right: 1rem;
+}
+
+.projetsContainer .projet .popinContainer .popin h4 {
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+}
+
+.projetsContainer .projet .popinContainer .popin p.subtitle {
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+}
+
+.projetsContainer .projet .popinContainer .popin p {
+    margin: 0 0 30px 0;
+}
+
+.projetsContainer .projet .popinContainer .popin ul {
+    list-style: none;
+    padding-left: 1em;
+    margin: 0 0 30px 0;
+    font-size: 1.3rem;
+}
+
+.projetsContainer .projet .popinContainer .popin ul > li:before {
+    display: inline-block;
+    content: "-";
+    width: 1em;
+    margin-left: -1em;
+}
+
+.projetsContainer .projet .popinContainer .popin .iframeContainer {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 51%;
+}
+
+.projetsContainer .projet .popinContainer .popin .iframeContainer iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0; top: 0;
+}
+
+.projetsContainer .projet .popinContainer .popin .close {
+    color: white;
+    opacity: 1;
+    border: none;
+    background: none;
+    font-weight: 700;
+    cursor: pointer;
+    width: 1.5rem;
+    padding: 1rem;
+    box-sizing: content-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.projetsContainer .projet .popinContainer .popin .close svg {
+    width: 100%;
+    pointer-events: none;
+}
+
+.projetsContainer .projet .popinContainer .popin .close:hover {
+    color: #00c6ff;
+}
+
+/* === Section à propos === */
+#propos {
+    background-image: url('../images/profilePicture-1x.jpg');
+    background-image: -webkit-image-set( url('../images/profilePicture-1x.jpg') 1x, url('../images/profilePicture-2x.jpg') 2x );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#proposFlex {
+    display: flex;
+}
+
+#proposFlex div {
+    width: 50%;
+}
+
+#proposFlex img {
+    max-width: 50%;
+    display: block;
+    float: right;
+}
+
+#proposFlex p {
+    margin: 100px 20px 0 0;
+    font-size: 1.5rem;
+}
+
+/* === Section contact === */
+
+#contact {
+    background-image: url('../images/bg2-1x.jpg');
+    background-image: -webkit-image-set( url('../images/bg2-1x.jpg') 1x, url('../images/bg2-2x.jpg') 2x );
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#contactOptions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+.option {
+    margin: 100px 20px 100px 20px;
+    width: 25%;
+}
+
+.option a {
+    display: flex;
+    flex-direction: column;
+}
+
+.option:hover p, .option:hover .fa {
+    color: #00c6ff !important;
+}
+
+.fa {
+    font-size: 5rem;
+}
+
+/* === footer === */
+footer p {
+    margin: 100px 0 100px 0;
+}
+
+/* === Media queries === */
+@media screen and (max-width: 1700px) {
+    html {
+        font-size: 12px;
+    }
+
+    header .menu li a:before {
+        height: .75rem;
+    }
+
+    header .menu {
+        font-size: 1.5rem;
+        left: -40vw;
+        transition-property: right, left;
+        transition-duration: 2s;
+        -webkit-transition-property: right, left; /* Safari */
+        -webkit-transition-duration: 0.5s; /* Safari */
+        position:fixed;
+        /*background-image: url("../images/banner-fade.png");*/
+        background: rgba(0,0,0,0.5);
+        top: 0;
+        padding-top: 40px;
+        margin: 0;
+        width: 30vw;
+        height: 100vh;
+    }
+
+    header .menu.open {
+        left: 0 !important;
+    }
+
+    header .hamburger {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .projetsContainer .projet .popinContainer .popin h3 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #competences {
+        padding-bottom: 5rem;
+    }
+
+    #competences .contenu div {
+        width: 40%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    #zoneHero h1 {
+        font-size: 7rem;
+    }
+
+    #zoneHero p {
+        font-size: 1.75rem;
+    }
+
+    .scrollToAction {
+        width: 5%;
+    }
+
+    h2 {
+       font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .projetsContainer .projet {
+        width: 100%;
+    }
+
+    .projetsContainer .projet .popinContainer .popin.split {
+        flex-direction: column;
+    }
+
+    .projetsContainer .projet .popinContainer .popin.split .droite {
+        order: -1;
+    }
+
+    .projetsContainer .projet .popinContainer .popin.split .gauche, .projetsContainer .projet .popinContainer .popin.split .droite {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 730px){
+    .scrollToAction {
+        width: 10%;
+    }
+
+    .option {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    #proposFlex div {
+        width: 100%;
+    }
+
+    #proposFlex p {
+        font-size: 1.75rem;
+        margin-bottom: 20px;
+    }
+
+    .menu {
+        left: -110vw;
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 550px){
+    #zoneHero {
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+
+    #zoneHero h1 {
+        font-size: 4rem;
+    }
+
+    #zoneHero p {
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .contenu div {
+        width: 90%;
+
+    }
+}
