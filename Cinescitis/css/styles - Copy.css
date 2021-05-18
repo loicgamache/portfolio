@@ -1,0 +1,387 @@
+/*----------------------------------------------------------------------------------------------------------------------
+famille de caractères
+----------------------------------------------------------------------------------------------------------------------*/
+body{
+    font-family: "roboto", sans-serif;
+    background-color: #2b2e31;
+    background: url("../images/bg1.png") repeat-x fixed;
+}
+html{
+    font-size: 62.5%
+}
+
+/*----------------------------------------------------------------------------------------------------------------------
+balisle génériques
+----------------------------------------------------------------------------------------------------------------------*/
+.wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------
+Menu
+----------------------------------------------------------------------------------------------------------------------*/
+
+header .wrapper{
+    z-index: 200;
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+
+    background-color: #2b2e31;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    height: 10rem;
+}
+
+#logotype{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logotype img{
+    width: 10rem;
+}
+
+#logotype h1{
+    color: #0a9ad1;
+    font-size: 5rem;
+    font-weight: bolder;
+    margin: 0;
+}
+
+div #menu{
+    display: flex;
+    align-items: center;
+}
+
+header nav ul, header nav li {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+header nav > ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav > ul > li > a {
+    display: inline-block;
+    height: 10rem;
+    padding: 0 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 10rem;
+    letter-spacing: 1px;
+    color: #0a9ad1;
+    text-decoration: none;
+    -webkit-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+}
+
+header nav > ul > li > a:hover {
+    background-color: #1c4351;
+    color: #f5eb64;
+}
+
+header nav > ul > li > ul{
+    z-index: 100;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    list-style: none;
+    height: 4rem;
+    background-color: #1c4351;
+    opacity: 0;
+    -webkit-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+    right: 0;
+}
+
+header nav > ul > li > ul > ul {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav > ul > li > ul > ul > li{
+    width: 15%;
+}
+
+header nav > ul > li > ul > ul > li > a {
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #0a9ad1;
+    background-color: #1c4351;
+    width: 100%;
+}
+
+header nav > ul > li > ul > ul > li > a:hover {
+    color: #f5eb64;
+}
+
+header nav > ul > li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------
+section coup de coeur
+----------------------------------------------------------------------------------------------------------------------*/
+#sectionCoupCoeur{
+    z-index: 1;
+    position: relative;
+    background: center fixed no-repeat;
+}
+
+#sectionCoupCoeur #overImg{
+    display: flex;
+    justify-content: center;
+}
+
+#sectionCoupCoeur #overImg .wrapper{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#sectionCoupCoeur #overImg div div{
+    display: flex;
+    justify-content: center;
+}
+
+
+#opacite{
+    position: absolute;
+    z-index: -1;
+    height: 90vh;
+    width: 100%;
+}
+
+
+#sectionCoupCoeur h2{
+    text-transform: uppercase;
+    font-size: 7rem;
+    text-align: center;
+    font-weight: 900;
+    margin: 0;
+    color: #0a9ad1;
+}
+
+.bouton{
+    font-family: "roboto", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    font-size: 5rem;
+    color: #0a9ad1;
+    background-color: transparent;
+    border: solid #0a9ad1 10px;
+    padding: 1.5rem;
+}
+
+
+.bouton:hover , .bouton:hover a{
+    color: #f5eb64;
+    border-color: #f5eb64;
+}
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------
+section carrousel
+----------------------------------------------------------------------------------------------------------------------*/
+
+#sectionCarrousel{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 110vh;
+}
+
+ h2{
+    text-align: center;
+    color: #0a9ad1;
+    font-size: 4rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 4rem 0 2rem 0;
+    text-shadow: 15px 15px 30px #000000;
+}
+
+#carrousel{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 1200px;
+}
+#conteneurCarrousel{
+    display: flex;
+    justify-content: center;
+}
+
+#carrousel .slick-list{
+    width: 80%;
+    right: 25px;
+}
+
+.slick-slide{
+    display: flex;
+    justify-content: center;
+}
+
+#mainImage{
+    height: 70vh;
+    margin: 0 auto 0 auto;
+    -webkit-box-shadow: 15px 15px 45px 15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 15px 15px 45px 15px rgba(0,0,0,0.75);
+    box-shadow: 15px 15px 45px 15px rgba(0,0,0,0.75);
+}
+ h3{
+    text-align: center;
+    color: #0a9ad1;
+    font-weight: bolder;
+    font-size: 4rem;
+    margin: 1rem;
+    text-shadow: 15px 15px 30px #000000;
+}
+
+#carrousel p{
+    display: flex;
+    justify-content: center;
+}
+
+.slick-arrow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slick-arrow:hover .a-right {
+    content: url('../images/rightArrowHover.png');
+}
+
+.slick-arrow:hover .a-left{
+    content: url('../images/leftArrowHover.png');
+}
+
+/*----------------------------------------------------------------------------------------------------------------------
+section liste
+----------------------------------------------------------------------------------------------------------------------*/
+
+#sectionListe{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.list-item{
+    width: 48%;
+    background-color: #2b2e31;
+    margin: 0 0 3rem 0;
+}
+
+.list-item a{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #0a9ad1;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.list-item .imgleft{
+    width: 50%;
+}
+
+.list-item p{
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: white;
+
+    white-space: normal;
+    height: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 2rem;
+}
+
+
+.list-item .afficheListe{
+    width: 100%;
+    height: 100%;
+}
+
+.list-item .bouton{
+    font-size: 2rem;
+    border-width: 0.5rem;
+}
+
+.divBouton{
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.rightPanel{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h4{
+  color: #0a9ad1;
+    font-size: 2rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+}
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------
+enleve les template
+----------------------------------------------------------------------------------------------------------------------*/
+#template-carrousel{
+    display: none;
+}
+
+#template-liste{
+    display: none;
+}
+
+
+
+
+/*======================================================================================================================
+ =======================================================================================================================
+ page film
+ =======================================================================================================================
+ ======================================================================================================================*/
+
+#template-cast{
+    display: none;
+}

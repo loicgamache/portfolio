@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Cinéscitis</title>
+
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/js.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+</head>
+<body>
+
+<header>
+    <div class="wrapper">
+        <div id="logotype">
+            <a href="index.html"><img src="images/logo-01.svg" alt="logo"/></a>
+
+            <h1>Cinéscitis</h1>
+        </div>
+        <div id="menu">
+
+            <div id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <nav id="navigation1" role="navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="#">Films</a>
+                        <ul>
+                            <ul>
+                                <li><a href="#">Populaires</a></li>
+                                <li><a href="#">Mieux cotés</a></li>
+                                <li><a href="#">En cinéma</a></li>
+                                <li><a href="#">Prochainement</a></li>
+                            </ul>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a href="#">Séries</a>
+                        <ul>
+                            <ul>
+                                <li><a href="#">Populaires</a></li>
+                                <li><a href="#">Mieux cotés</a></li>
+                                <li><a href="#">Les plus longues</a></li>
+                                <li><a href="#">Prochainement</a></li>
+                            </ul>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a href="#">Rechercher</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <nav id="navigation2" role="navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="#">Films</a>
+                        <ul>
+                            <ul>
+                                <li><a href="#">Populaires</a></li>
+                                <li><a href="#">Mieux cotés</a></li>
+                                <li><a href="#">En cinéma</a></li>
+                                <li><a href="#">Prochainement</a></li>
+                            </ul>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a href="#">Séries</a>
+                        <ul>
+                            <ul>
+                                <li><a href="#">Populaires</a></li>
+                                <li><a href="#">Mieux cotés</a></li>
+                                <li><a href="#">Les plus longues</a></li>
+                                <li><a href="#">Prochainement</a></li>
+                            </ul>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a href="#">Rechercher</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+
+        </div>
+    </div>
+</header>
+
+<div id="sectionCoupCoeur">
+    <div id="overImg">
+        <img id="opacite" src="images/opaciteCoupCoeur.png" alt="filtre opacité"/>
+
+        <div class="wrapper">
+            <div>
+                <h2>Notre coup de coeur du mois</h2>
+            </div>
+
+            <div>
+                <a id="btnVoirFilm" href="fiche-film.html">
+                    <button class="bouton">Voir le film</button>
+                </a>
+            </div>
+
+            <div>
+                <img id="imgScrollDown" src="images/scrollIndicator.png" alt="scroll down"/>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div id="template-carrousel">
+    <div>
+        <a href=""><img id="mainImage" src="" alt=""></a>
+
+        <h3 class="titreFilm"></h3>
+
+        <p class="vote"></p>
+    </div>
+
+</div>
+
+<div id="sectionCarrousel">
+
+    <h2 id="titreCarrousel">Films les plus populaires</h2>
+
+    <div id="conteneurCarrousel">
+        <div id="carrousel">
+
+        </div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <h2>Présentement au cinéma</h2>
+
+    <div id="sectionListe">
+
+
+    </div>
+</div>
+
+<div id="template-liste">
+
+    <div class="list-item">
+        <a href="">
+            <div class="imgleft">
+                <img class="afficheListe" src="" alt="affiche du film"/>
+            </div>
+            <div class="rightPanel">
+                <div>
+                    <h4>Jack Reacher</h4>
+                </div>
+                <div id="voteListe">
+
+                </div>
+                <div>
+                    <p>Reacher retourne dans sa base militaire de Virginie pour dîner avec une collègue. Mais il
+                        apprend que celle-ci a été arrêtée et que lui-même est accusé de meurtres.</p>
+                </div>
+                <div class="divBouton">
+                    <button class="bouton">Voir plus</button>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<footer>
+    <div class="wrapper">
+        <div class="spriteContainer">
+            <a href="https://www.facebook.com/">
+                <div class="sprite sprite-facebook"></div>
+            </a>
+            <a href="https://twitter.com/?lang=fr">
+                <div class="sprite sprite-twitter"></div>
+            </a>
+            <a href="https://www.youtube.com/">
+                <div class="sprite sprite-youtube"></div>
+            </a>
+        </div>
+        <p>© 2016 cinéscitis - tous droits réservés</p>
+
+        <div class="logodb">
+            <a href="https://www.themoviedb.org/">
+                <img src="images/moviedblogo.png" alt="logo the movie db"/>
+            </a>
+        </div>
+    </div>
+
+</footer>
+
+
+<script>
+    afficheCoupCoeur();
+    afficheTopRated();
+    afficheCinema();
+</script>
+
+</body>
+</html>

@@ -1,20 +1,3 @@
-/**
- * Created by Loic on 10/12/2017.
- */
-
-$(document).ready(function () {
-
-
-    // $('.open-popup-link').magnificPopup({
-    //     type: 'inline',
-    //     midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-    // });
-
-    $('#nav-icon2').click(function(){
-        $('#menu, #nav-icon2').toggleClass('open');
-    });
-});
-
 document.querySelector("header .hamburger").addEventListener('click', function() {
     this.classList.toggle("close");
     document.querySelector("header .menu").classList.toggle("open");
@@ -32,4 +15,11 @@ document.querySelectorAll(".projetsContainer .projet .popinContainer").forEach(i
             item.classList.remove("open");
         }
     });
+});
+
+document.body.addEventListener('keydown', function(e) {
+    const openedPopin = document.querySelector(".projetsContainer .projet .popinContainer.open");
+    if (e.key == "Escape" && openedPopin) {
+        openedPopin.classList.remove("open");
+    }
 });
