@@ -1,771 +1,515 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>Loïc Gamache</title>
+    <meta name="description" content="Portfolio du développeur web Loïc Gamache">
     <link rel="stylesheet" href="css/normalize.css"/>
-    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="js/js.js"></script>
-</head>
-<body>
-<header>
-    <button class="hamburger" type="button">
+  </head>
+  <body>
+    <header>
+      <button class="hamburger" type="button">
         <span></span>
         <span></span>
         <span></span>
-    </button>
+      </button>
 
-    <ul class="menu">
-        <li>
-            <a href="#top">Accueil</a>
-        </li>
-        <li>
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="#home">Accueil</a>
+          </li>
+          <li>
             <a href="#competences">Compétences</a>
-        </li>
-        <li>
+          </li>
+          <li>
             <a href="#projets">Projets</a>
-        </li>
-        <li>
-            <a href="#propos">Présentation</a>
-        </li>
-        <li>
+          </li>
+          <li>
+            <a href="#propos">À propos</a>
+          </li>
+          <li>
             <a href="#contact">Contact</a>
-        </li>
-    </ul>
-</header>
-
-<div id="zoneHero">
-    <span>
-        <h1>Loïc<br>Gamache</h1>
-        <p>Développeur front-end</p>
-    </div>
-
-    <img class="scrollToAction" src="images/ScrollToAction.png" alt="Incitatif de scroll">
-</div>
-
-<div id="competences">
-    <div class="wrapper">
-        <h2>Compétences</h2>
-        <p class="sousTitre">(Ce pourquoi vous m'engagerez)</p>
-        <div class="contenu">
-            <div>
-                <h3>&#60;html<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;css&#125;</h3>
-                <p>Je maîtrise le HTML et CSS si bien qu'aucune maquette venant de votre designer ne me fait&nbsp;peur.</p>
-            </div>
-
-            <div>
-                <h3 class="uneLigne">Javascript</h3>
-                <p>Je connais très bien le Javascript et c'est ce que j'aime le plus faire dans un projet, surtout quand c'est dans un framework tel que&nbsp;Vue.js.</p>
-            </div>
-
-            <div>
-                <h3>Suite<br>Adobe</h3>
-                <p>J'ai la capacité d'effectuer de nombreuses choses sur la suite Adobe. (Photoshop, Illustrator, Premiere, After&nbsp;Effect.)</p>
-            </div>
-
-            <div>
-                <h3>Bon<br>Sens</h3>
-                <p>La meilleure compétence qu'une personne peut avoir. Elle m'a été donnée à ma naissance (remerciez mes&nbsp;parents).</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="projets">
-    <h2>Projets</h2>
-    <p class="sousTitre">(Ou la section du jugement)</p>
-
-    <div class="projetsContainer">
-        <!-- <div class="projet">
-            <a class="open-popup-link" href="#popup1">
-                <img srcset="images/ProjetChaosMedia1-1x.jpg 1x, images/ProjetChaosMedia1-2x.jpg 2x"
-                     src="images/ProjetChaosMedia1-1x.jpg"
-                     alt="Projet du site web chaos média" class="imageProjet">
-                <div class="middle">
-                    <div class="texte">
-                        <h3>Chaos Média</h3>
-                        <p>Intégration web</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-
-        <div class="projet">
-            <a class="open-popup-link" href="#popup2">
-                <img srcset="images/ProjetCinescitis1-1x.jpg 1x, images/ProjetCinescitis1-2x.jpg 2x"
-                     src="images/ProjetCinescitis1-1x.jpg"
-                     alt="Projet du site web cinéscitis" class="imageProjet">
-                <div class="middle">
-                    <div class="texte">
-                        <h3>Cinéscitis</h3>
-                        <p>Intégration et design web</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-
-        <div class="projet">
-            <a class="open-popup-link" href="#popup3">
-                <img srcset="images/ProjetGravity1-1x.jpg 1x, images/ProjetGravity1-2x.jpg 2x"
-                     src="images/ProjetGravity1-1x.jpg"
-                     alt="Projet du site gravity computer" class="imageProjet">
-                <div class="middle">
-                    <div class="texte">
-                        <h3>Gravity Computer</h3>
-                        <p>design web mobile</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-
-        <div class="projet">
-            <a class="open-popup-link" href="#popup4">
-                <img srcset="images/ProjetSoleilLevant1-1x.jpg 1x, images/ProjetSoleilLevant1-2x.jpg 2x"
-                     src="images/ProjetSoleilLevant1-1x.jpg"
-                     alt="Projet de la légende du soleil levant" class="imageProjet">
-                <div class="middle">
-                    <div class="texte">
-                        <h3>La légende du soleil</h3>
-                        <p>Animation 2D/3D</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-
-        <div class="projet">
-            <a class="open-popup-link" href="#popup5">
-                <img srcset="images/ProjetSuperlolo1-1x.jpg 1x, images/ProjetSuperlolo1-2x.jpg 2x"
-                     src="images/ProjetSuperlolo1-1x.jpg"
-                     alt="Projet de super lolo" class="imageProjet">
-                <div class="middle">
-                    <div class="texte">
-                        <h3>Générique Super-Lolo</h3>
-                        <p>Animation 2D et vidéo</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-
-        <div class="projet">
-            <a class="open-popup-link" href="#popup6">
-                <img srcset="images/ProjetTshirt1-1x.jpg 1x, images/ProjetTshirt1-2x.jpg 2x"
-                     src="images/ProjetTshirt1-1x.jpg"
-                     alt="Projet de Tshirt chaos média" class="imageProjet">
-                <div class="middle">
-                    <div class="texte">
-                        <h3>Chandail Chaos média</h3>
-                        <p>Dessin 2D</p>
-                    </div>
-                </div>
-            </a>
-        </div> -->
-
-        <div class="projet">
-            <button class="projetLink">
-                <picture>
-                    <source media="(max-width: 480px)" srcset="images/scriptam-0.25x.jpg">
-                    <source media="(max-width: 1920px)" srcset="images/scriptam-0.5x.jpg">
-                    <source media="(min-width: 1921px)" srcset="images/scriptam-1x.jpg">
-                    <img src="images/scriptam-0.5x.jpg" class="imageProjet">
-                </picture>
-                <div class="middle">
-                    <div class="texte">
-                        <h3>Scriptam Glassboards</h3>
-                        <p>Développement web</p>
-                    </div>
-                </div>
-            </button>
-
-            <div class="popinContainer">
-                <div class="popin split">
-                    <button class="close"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></button>
-                    <div class="gauche">
-                        <picture>
-                            <source media="(max-width: 480px)" srcset="images/scriptam-long-0.5x.jpg">
-                            <source media="(max-width: 1920px)" srcset="images/scriptam-long-1x.jpg">
-                            <source media="(min-width: 1921px)" srcset="images/scriptam-long-2x.jpg">
-                            <img src="images/scriptam-long-1x.jpg">
-                        </picture>
-                    </div>
-                
-                    <div class="droite">
-                        <h3>Site web de Scriptam Glassboards</h3>
-                        <p class="subtitle">Projet professionnel - Développement web</p>
-                        <h4>Description</h4>
-                        <p><a href="https://scriptamglassboard.com/" target="_blank">Scriptam Glassboards</a> est un site web où le but principal est de présenter les produits disponibles et faire une demande de prix. La partie la plus ardue a été le formulaire dont les étapes changent selon les produits choisis. Ma tâche principale était de faire le HTML/CSS et de tout intégrer dans le gestionnaire de contenu <a href="https://umbraco.com/" target="_blank">Umbraco</a>.</p>
-                        <h4>Logiciels et langages utilisés</h4>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>Razor</li>
-                            <li>Un peu de C#</li>
-                            <li>Visual Studio</li>
-                            <li>Figma</li>
-                        </ul>
-                        <h4>Habiletés développées</h4>
-                        <p>Développement de formulaires complexes, configuration du gestionnaire de contenu Umbraco et utilisation du Razor.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="projet">
-            <button class="projetLink">
-                <picture>
-                    <source media="(max-width: 480px)" srcset="images/jobdereve-0.25x.jpg">
-                    <source media="(max-width: 1920px)" srcset="images/jobdereve-0.5x.jpg">
-                    <source media="(min-width: 1921px)" srcset="images/jobdereve-1x.jpg">
-                    <img src="images/jobdereve-0.5x.jpg" class="imageProjet">
-                </picture>
-                <div class="middle">
-                    <div class="texte">
-                        <h3>Recrutement Nmédia</h3>
-                        <p>Développement web</p>
-                    </div>
-                </div>
-            </button>
-
-            <div class="popinContainer">
-                <div class="popin split">
-                    <button class="close"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></button>
-                    <div class="gauche">
-                        <picture>
-                            <source media="(max-width: 480px)" srcset="images/jobdereve-long-long-0.5x.jpg">
-                            <source media="(max-width: 1920px)" srcset="images/jobdereve-long-1x.jpg">
-                            <source media="(min-width: 1921px)" srcset="images/jobdereve-long-2x.jpg">
-                            <img src="images/jobdereve-long-1x.jpg">
-                        </picture>
-                    </div>
-                
-                    <div class="droite">
-                        <h3>Site web de recrutement&nbsp;Nmédia</h3>
-                        <p class="subtitle">Projet professionnel - Développement web</p>
-                        <h4>Description</h4>
-                        <p>Le <a href="https://jobdereve.nmedia.ca/emplois-ti" target="_blank">site de recrutement Nmédia</a> est un site axé sur le recrutement de main d'oeuvre qui contient des articles de blogue et les postes disponibles. Ce qui était le plus difficile dans ce projet était l'arrimage entre le designer et moi-même pour bien gérer le responsive du site web.</p>
-                        <p>Le site a été intégré dans le gestionnaire de contenu Altitude 3, fait par Nmédia. Le CMS ne permet pas l'utilisation des dernières balises HTML5. Le score de performance du site web pourrait donc être affecté.</p>
-                        <h4>Logiciels et langages utilisés</h4>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>Visual Studio</li>
-                            <li>Figma</li>
-                        </ul>
-                        <h4>Habiletés développées</h4>
-                        <p>Coordination entre designer et développeur, l'affichage mosaïque et l'implémentation d'un carrousel comportant des zones multiples.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="projet">
-            <button class="projetLink">
-                <picture>
-                    <source media="(max-width: 480px)" srcset="images/designform-0.25x.jpg">
-                    <source media="(max-width: 1920px)" srcset="images/designform-0.5x.jpg">
-                    <source media="(min-width: 1921px)" srcset="images/designform-1x.jpg">
-                    <img src="images/designform-0.5x.jpg" class="imageProjet">
-                </picture>
-                <div class="middle">
-                    <div class="texte">
-                        <h3>Recherche de style</h3>
-                        <p>Développement web</p>
-                    </div>
-                </div>
-            </button>
-
-            <div class="popinContainer">
-                <div class="popin split">
-                    <button class="close"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></button>
-                    <div class="gauche">
-                        <picture>
-                            <source media="(max-width: 480px)" srcset="images/designform-long-0.5x.jpg">
-                            <source media="(max-width: 1920px)" srcset="images/designform-long-1x.jpg">
-                            <source media="(min-width: 1921px)" srcset="images/designform-long-2x.jpg">
-                            <img src="images/designform-long-1x.jpg">
-                        </picture>
-                    </div>
-                
-                    <div class="droite">
-                        <h3>Recherche de style Nmédia</h3>
-                        <p class="subtitle">Projet professionnel - Développement web</p>
-                        <h4>Description</h4>
-                        <p>Les designers de Nmédia demandaient toujours les mêmes informations aux clients avant de débuter un projet. Ils ont donc voulu un <a href="https://design.nmedia.ca/formulaire" target="_blank">formulaire de recherche de style</a> qui pouvait être envoyé aux clients avant une rencontre afin que tous puissent arriver préparés. J'ai fait tout le code HTML, CSS et Javascript.</p>
-                        <p>Le site a été intégré dans le gestionnaire de contenu Altitude 3, fait par Nmédia. Le CMS ne permet pas l'utilisation des dernières balises HTML5. Le score de performance du site web pourrait donc être affecté.</p>
-                        <h4>Logiciels et langages utilisés</h4>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>Visual Studio</li>
-                            <li>Figma</li>
-                        </ul>
-                        <h4>Habiletés développées</h4>
-                        <p>Avec ce site web, j'ai pu parfaire mes connaissances pour les formulaires complexes et j'ai appris à faire une page qui défile seulement par paliers.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="projet">
-            <button class="projetLink">
-                <picture>
-                    <source media="(max-width: 480px)" srcset="images/groupecloutier-0.25x.jpg">
-                    <source media="(max-width: 1920px)" srcset="images/groupecloutier-0.5x.jpg">
-                    <source media="(min-width: 1921px)" srcset="images/groupecloutier-1x.jpg">
-                    <img src="images/groupecloutier-0.5x.jpg" class="imageProjet">
-                </picture>
-                <div class="middle">
-                    <div class="texte">
-                        <h3>Groupe Cloutier</h3>
-                        <p>Développement web</p>
-                    </div>
-                </div>
-            </button>
-
-            <div class="popinContainer">
-                <div class="popin split">
-                    <button class="close"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></button>
-                    <div class="gauche">
-                        <picture>
-                            <source media="(max-width: 480px)" srcset="images/groupecloutier-long-0.5x.jpg">
-                            <source media="(max-width: 1920px)" srcset="images/groupecloutier-long-1x.jpg">
-                            <source media="(min-width: 1921px)" srcset="images/groupecloutier-long-2x.jpg">
-                            <img src="images/groupecloutier-long-1x.jpg">
-                        </picture>
-                    </div>
-                
-                    <div class="droite">
-                        <h3>Groupe Cloutier</h3>
-                        <p class="subtitle">Projet professionnel - Développement web</p>
-                        <h4>Description</h4>
-                        <p><a href="https://www.groupecloutier.com/accueil" target="_blank">Groupe Cloutier</a> est un des premiers sites que j'ai intégrés dans mon cheminement professionnel. Il m'a permis d'apprendre comment intégrer un design plus <i>funky</i> qu'un site habituel.</p>
-                        <p>Le site a été intégré dans le gestionnaire de contenu Altitude 3, fait par Nmédia. Le CMS ne permet pas l'utilisation des dernières balises HTML5. Le score de performance du site web pourrait donc être affecté.</p>
-                        <h4>Logiciels et langages utilisés</h4>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>Figma</li>
-                        </ul>
-                        <h4>Habiletés développées</h4>
-                        <p>L'intégration d'un design moins conventionnel pour un site de plus grande envergure.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="projet">
-            <button class="projetLink">
-                <picture>
-                    <source media="(max-width: 480px)" srcset="images/acq-0.25x.jpg">
-                    <source media="(max-width: 1920px)" srcset="images/acq-0.5x.jpg">
-                    <source media="(min-width: 1921px)" srcset="images/acq-1x.jpg">
-                    <img src="images/acq-0.5x.jpg" class="imageProjet">
-                </picture>
-                <div class="middle">
-                    <div class="texte">
-                        <h3>Association du camionnage du Québec</h3>
-                        <p>Développement web</p>
-                    </div>
-                </div>
-            </button>
-
-            <div class="popinContainer">
-                <div class="popin split">
-                    <button class="close"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></button>
-                    <div class="gauche">
-                        <picture>
-                            <source media="(max-width: 480px)" srcset="images/acq-long-0.5x.jpg">
-                            <source media="(max-width: 1920px)" srcset="images/acq-long-1x.jpg">
-                            <source media="(min-width: 1921px)" srcset="images/acq-long-2x.jpg">
-                            <img src="images/acq-long-1x.jpg">
-                        </picture>
-                    </div>
-                
-                    <div class="droite">
-                        <h3>Association du camionnage du Québec</h3>
-                        <p class="subtitle">Projet professionnel - Développement web</p>
-                        <h4>Description</h4>
-                        <p><a href="https://www.carrefour-acq.org/accueil" target="_blank">L'association du camionnage du Québec</a> est le premier site de grosse envergure qui contient tout ce qu'un site peut contenir: des articles de blogue, des pages réservées à des utilisateurs, un catalogue de produits et un panier d'achat. J'ai fait tout le HTML, CSS et une partie du Javascript.</p>
-                        <p>Le site a été intégré dans le gestionnaire de contenu Altitude 3, fait par Nmédia. Le CMS ne permet pas l'utilisation des dernières balises HTML5. Le score de performance du site web pourrait donc être affecté.</p>
-                        <h4>Logiciels et langages utilisés</h4>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>Visual Studio</li>
-                            <li>Figma</li>
-                        </ul>
-                        <h4>Habiletés développées</h4>
-                        <p>J'ai appris à bien travailler sur un gros projet web tout en communiquant avec un développeur <i>back-end</i>.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="projet">
-            <button class="projetLink">
-                <picture>
-                    <source media="(max-width: 480px)" srcset="images/cctn-0.25x.jpg">
-                    <source media="(max-width: 1920px)" srcset="images/cctn-0.5x.jpg">
-                    <source media="(min-width: 1921px)" srcset="images/cctn-1x.jpg">
-                    <img src="images/cctn-0.5x.jpg" class="imageProjet">
-                </picture>
-                <div class="middle">
-                    <div class="texte">
-                        <h3>CCTN</h3>
-                        <p>Développement web</p>
-                    </div>
-                </div>
-            </button>
-
-            <div class="popinContainer">
-                <div class="popin split">
-                    <button class="close"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></button>
-                    <div class="gauche">
-                        <picture>
-                            <source media="(max-width: 480px)" srcset="images/cctn-long-0.5x.jpg">
-                            <source media="(max-width: 1920px)" srcset="images/cctn-long-1x.jpg">
-                            <source media="(min-width: 1921px)" srcset="images/cctn-long-2x.jpg">
-                            <img src="images/cctn-long-1x.jpg">
-                        </picture>
-                    </div>
-                
-                    <div class="droite">
-                        <h3>CCTN</h3>
-                        <p class="subtitle">Projet professionnel - Développement web</p>
-                        <h4>Description</h4>
-                        <p><a href="https://www.cctn.com/accueil" target="_blank">CCTN</a> est un site qui a pour but de présenter des produits et leur documentation. J'ai dû faire preuve de patience car toutes les informations arrivaient au compte-gouttes tout au long du développement.</p>
-                        <p>Le site a été intégré dans le gestionnaire de contenu Altitude 3, fait par Nmédia. Le CMS ne permet pas l'utilisation des dernières balises HTML5. Le score de performance du site web pourrait donc être affecté.</p>
-                        <h4>Logiciels et langages utilisés</h4>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>Visual Studio</li>
-                            <li>Figma</li>
-                        </ul>
-                        <h4>Habiletés développées</h4>
-                        <p>J'ai amélioré mon habileté à faire du <i>multitasking</i>, car je devais travailler sur d'autres projets en attendant les informations nécessaires au développement du site.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="projet">
-            <button class="projetLink">
-                <picture>
-                    <source media="(max-width: 480px)" srcset="images/unaun-0.25x.jpg">
-                    <source media="(max-width: 1920px)" srcset="images/unaun-0.5x.jpg">
-                    <source media="(min-width: 1921px)" srcset="images/unaun-1x.jpg">
-                    <img src="images/unaun-0.5x.jpg" class="imageProjet">
-                </picture>
-                <div class="middle">
-                    <div class="texte">
-                        <h3>Un à Un architectes</h3>
-                        <p>Développement web</p>
-                    </div>
-                </div>
-            </button>
-
-            <div class="popinContainer">
-                <div class="popin split">
-                    <button class="close"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></button>
-                    <div class="gauche">
-                        <picture>
-                            <source media="(max-width: 480px)" srcset="images/unaun-long-0.5x.jpg">
-                            <source media="(max-width: 1920px)" srcset="images/unaun-long-1x.jpg">
-                            <source media="(min-width: 1921px)" srcset="images/unaun-long-2x.jpg">
-                            <img src="images/unaun-long-1x.jpg">
-                        </picture>
-                    </div>
-                
-                    <div class="droite">
-                        <h3>Un à Un architectes</h3>
-                        <p class="subtitle">Projet professionnel - Développement web</p>
-                        <h4>Description</h4>
-                        <p><a href="https://www.unaun-architectes.ca/accueil" target="_blank">Un à Un architectes</a> est le premier site web professionnel que j'ai fait. Sa simplicité m'a permis de bien comprendre les bases sans me surcharger.</p>
-                        <p>Le site a été intégré dans le gestionnaire de contenu Altitude 3, fait par Nmédia. Le CMS ne permet pas l'utilisation des dernières balises HTML5. Le score de performance du site web pourrait donc être affecté.</p>
-                        <h4>Logiciels et langages utilisés</h4>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript (JQuery)</li>
-                            <li>Visual Studio</li>
-                            <li>Figma</li>
-                        </ul>
-                        <h4>Habiletés développées</h4>
-                        <p>J'ai parfait mes compétences acquises lors de mon parcours scolaire, c’est-à-dire le HTML, CSS et Javascript (JQuery).</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="projet">
-            <button class="projetLink">
-                <img srcset="images/ProjetCinescitis1-1x.jpg 1x, images/ProjetCinescitis1-2x.jpg 2x" src="images/ProjetCinescitis1-1x.jpg" class="imageProjet">
-                <div class="middle">
-                    <div class="texte">
-                        <h3>Cinéscitis</h3>
-                        <p>Développement web</p>
-                    </div>
-                </div>
-            </button>
-
-            <div class="popinContainer">
-                <div class="popin split">
-                    <button class="close"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></button>
-                    <div class="gauche">
-                        <img src="images/ProjetCinescitis2.jpg" alt="page web du projet Cinéscitis">
-                        <img src="images/ProjetCinescitis3.jpg" alt="page web du projet Cinéscitis">
-                    </div>
-                
-                    <div class="droite">
-                        <h3>Cinéscitis</h3>
-                        <p class="subtitle">Projet scolaire - Création de site web</p>
-                        <h4>Description</h4>
-                        <p><a href="/portfolio/Cinescitis/index.html" target="_blank">Cinéscitis</a> est un projet web scolaire dont le but était de réaliser un site web de A à Z (UI, design et développement web) utilisant l'API de <a href="http://themoviedb.org" target="_blank">themoviedb.org</a> pour les textes et les images. La zone commentaires n'était pas incluse dans le devis.</p>
-                        <h4>Logiciels et langages utilisés</h4>
-                        <ul>
-                            <li>Photoshop</li>
-                            <li>Html</li>
-                            <li>CSS avec SASS</li>
-                            <li>Javascript (JQuery)</li>
-                            <li>Php storm</li>
-                        </ul>
-                        <h4>Habiletés développées</h4>
-                        <p>J'ai pu apprendre comment créer un site web à partir de zéro et comment faire appel à un API avec JQuery.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--contenu des pop up-->
-<!-- <div id="popup1" class="white-popup mfp-hide deuxCote">
-    <div class="gauche">
-        <img src="images/ProjetChaosMedia2.jpg" alt="page web du projet Chaos Média">
-    </div>
-
-    <div class="droite">
-        <h3>Site web de Chaos Média</h3>
-        <p>Projet Scolaire - intégration web</p>
-
-
-        <h4>Description</h4>
-        <p>Chaos Média est un événement splendide sur le multimédia. Dans le cadre de notre cours, nous devions réaliser
-            leur site web sous Wordpress avec deux pages d'accueil changeantes dépendamment de l'événement actif ou non.
-            J'avais comme tâche principale de mettre en page le site (css), mais j'ai également touché à toutes les
-            autres sphères du projet. (Php, design, mise en ligne, contenu gestion Wordpress).</p>
-
-        <h4>Logiciels et langages utilisés</h4>
-        <ul>
-            <li>Php storm</li>
-            <li>Php</li>
-            <li>Html</li>
-            <li>CSS</li>
-            <li>Javascript</li>
+          </li>
         </ul>
+      </nav>
+    </header>
 
-        <h4>Habiletés développées</h4>
-        <p>Intégration d'un site web sous le gestionnaire de contenu Wordpress en équipe. Division des tâches, gestion
-            des dossiers et fichiers, mise en page css à partir d'un php réalisé par une autre personne.</p>
-
-    </div>
-
-</div>
-
-<div id="popup2" class="white-popup mfp-hide deuxCote">
-    <div class="gauche">
-        <img src="images/ProjetCinescitis2.jpg" alt="page web du projet Cinéscitis">
-    </div>
-
-    <div class="droite">
-        <h3>Site web Cinéscitis</h3>
-        <p>Projet Scolaire - intégration et design web</p>
-
-
-        <h4>Description</h4>
-        <p>Réalisation d'un site web pour films utilisant l'API de <a href="http://themoviedb.org" target="_blank">themoviedb.org</a>
-            pour tous
-            les textes et les images.</p>
-
-        <h4>Logiciels et langages utilisés</h4>
-        <ul>
-            <li>Php storm</li>
-            <li>Photoshop</li>
-            <li>Php</li>
-            <li>Html</li>
-            <li>CSS avec sass</li>
-            <li>Javascript</li>
-        </ul>
-
-        <h4>Habiletés développées</h4>
-        <p>Intégration en ligne php et css, utilisant une banque de données externe pour tous les textes et les images.
-            Utilisation de sass. adaptation tablette et mobile</p>
-
-    </div>
-</div>
-
-<div id="popup3" class="white-popup mfp-hide deuxCote">
-    <div class="gauche">
-        <img src="images/ProjetGravity2.jpg" alt="page web du projet Gravity">
-    </div>
-
-    <div class="droite">
-        <h3>Gravity Computer</h3>
-        <p>Projet Scolaire - Design web</p>
-
-
-        <h4>Description</h4>
-        <p>Réalisation d'un site marchand pour téléphone avec l'utilisation d'un logo déjà existant.</p>
-
-        <h4>Logiciels et langages utilisés</h4>
-        <ul>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-        </ul>
-
-        <h4>Habiletés développées</h4>
-        <p>Design d'application cellulaire, gestion des données(choix des données pertinentes) et expérience utilisateur
-            ergonome(règle des 3 clics).</p>
-    </div>
-</div>
-
-<div id="popup4" class="white-popup mfp-hide">
-
-    <div class="iframeContainer">
-        <iframe src="https://www.youtube.com/embed/hK2vyVS_xe8?rel=0" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <h3>La légende du soleil</h3>
-    <p>Projet Scolaire - Animation 2D/3D</p>
-
-
-    <h4>Description</h4>
-    <p>Animation 2D et 3D, réalisé avec l'excellent <a href="http://charlestetreault.com" target="_blank">Charles
-        Tétreault</a>, sur la
-        légende du moine qui permet au soleil de se lever. J'ai travaillé sur la modélisation de la maison et sa
-        texture, du mur, du pont et du gazon, ainsi que le dessin 2D des montagnes, l'animation 2D du bonhomme et
-        l'animation de la caméra</p>
-
-    <h4>Logiciels et langages utilisés</h4>
-    <ul>
-        <li>Blender</li>
-        <li>Photoshop</li>
-        <li>Premiere Pro</li>
-    </ul>
-
-    <h4>Habiletés développées</h4>
-    <p>Modélisation 3D, création et application de textures, animation 2D, mouvements de caméra, compositing, gestion du
-        temps de travail et de rendu, direction artistique.</p>
-</div>
-
-<div id="popup5" class="white-popup mfp-hide">
-    <div class="iframeContainer">
-        <iframe src="https://www.youtube.com/embed/8U3vzsNREWE?rel=0" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <h3>Générique de Super-Lolo</h3>
-    <p>Projet Scolaire - Animation 2D et montage vidéo</p>
-
-
-    <h4>Description</h4>
-    <p>Animation 2D et montage vidéo pour l'introduction du film Super-Lolo dans le cadre du cours de réalisations
-        vidéo. Tout à été réalisé par moi à l'exception de la typographie et des images toutes libre de droits.</p>
-
-    <h4>Logiciels et langages utilisés</h4>
-    <ul>
-        <li>After Effect</li>
-        <li>Illustrator</li>
-        <li>Premiere Pro</li>
-        <li>Photoshop</li>
-    </ul>
-
-    <h4>Habiletés développées</h4>
-    <p>Animation d'éléments 2D suivant le rythme de la musique et montage vidéo.</p>
-</div>
-
-<div id="popup6" class="white-popup mfp-hide">
-
-    <img srcset="images/ProjetTshirt1-1x.jpg 1x, images/ProjetTshirt1-2x.jpg 2x"
-         src="images/ProjetTshirt1-1x.jpg"
-         alt="Projet de Tshirt chaos média" class="imageProjet">
-    <h3>Chandail de Chaos Média</h3>
-    <p>Concours - Dessin 2D et design graphique</p>
-
-
-    <h4>Description</h4>
-    <p>Illustration 2D dans Illustrator pour un concours. Le meilleur design était désigné pour être le chandail
-        officiel de l'événement et c'est mon design qui l'a remporté.</p>
-
-    <h4>Logiciels et langages utilisés</h4>
-    <ul>
-        <li>Illustrator</li>
-    </ul>
-
-    <h4>Habiletés développées</h4>
-    <p>Illustration selon une thématique et respect des critères pour une impression sur chandail.</p>
-</div> -->
-
-<div id="propos">
-    <h2>À Propos</h2>
-    <p class="sousTitre">(Vous êtes ici car vous devez passer par là pour me contacter)</p>
-    <div class="wrapper" id="proposFlex">
-        <div>
+    <main>
+      <section id="home">
+        <span>
+          <h1>Loïc<br>Gamache</h1>
+          <p>Développeur front-end</p>
+        </span>
+      
+        <img class="scrollToAction" src="images/ScrollToAction.png" alt="Incitatif de scroll">
+      </section>
+      
+      <section id="competences">
+        <div class="wrapper">
+          <h2>Compétences</h2>
+          <p class="sousTitre">(Ce pourquoi vous m'engagerez)</p>
+          <div class="contenu">
+            <div>
+              <h3>&#60;html<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;css&#125;</h3>
+              <p>Je maîtrise le HTML et CSS si bien qu'aucune maquette venant de votre designer ne me fait&nbsp;peur.</p>
+            </div>
+      
+            <div>
+              <h3 class="uneLigne">Javascript</h3>
+              <p>Je connais très bien le Javascript et c'est ce que j'aime le plus faire dans un projet, surtout quand c'est dans un framework tel que&nbsp;Vue.js.</p>
+            </div>
+      
+            <div>
+              <h3>Suite<br>Adobe</h3>
+              <p>J'ai la capacité d'effectuer de nombreuses choses sur la suite Adobe. (Photoshop, Illustrator, Premiere, After&nbsp;Effect.)</p>
+            </div>
+      
+            <div>
+              <h3>Bon<br>Sens</h3>
+              <p>La meilleure compétence qu'une personne peut avoir. Elle m'a été donnée à ma naissance (remerciez mes&nbsp;parents).</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="projets">
+        <h2>Projets</h2>
+        <p class="sousTitre">(Ou la section du jugement)</p>
+        <div class="projetsContainer">
+          <div class="projet">
+            <button class="projetLink">
+              <picture>
+                <source media="(max-width: 480px)" srcset="images/scriptam-0.25x.jpg">
+                <source media="(max-width: 1920px)" srcset="images/scriptam-0.5x.jpg">
+                <source media="(min-width: 1921px)" srcset="images/scriptam-1x.jpg">
+                <img src="images/scriptam-0.5x.jpg" class="imageProjet">
+              </picture>
+              <div class="middle">
+                <div class="texte">
+                  <h3>Scriptam Glassboards</h3>
+                  <p>Développement web</p>
+                </div>
+              </div>
+            </button>
+      
+            <div class="popinContainer">
+              <div class="popin split">
+                <button class="close"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></button>
+                <div class="gauche">
+                  <picture>
+                    <source media="(max-width: 480px)" srcset="images/scriptam-long-0.5x.jpg">
+                    <source media="(max-width: 1920px)" srcset="images/scriptam-long-1x.jpg">
+                    <source media="(min-width: 1921px)" srcset="images/scriptam-long-2x.jpg">
+                    <img src="images/scriptam-long-1x.jpg">
+                  </picture>
+                </div>
+              
+                <div class="droite">
+                  <h3>Site web de Scriptam Glassboards</h3>
+                  <p class="subtitle">Projet professionnel - Développement web</p>
+                  <h4>Description</h4>
+                  <p><a href="https://scriptamglassboard.com/" target="_blank">Scriptam Glassboards</a> est un site web où le but principal est de présenter les produits disponibles et faire une demande de prix. La partie la plus ardue a été le formulaire dont les étapes changent selon les produits choisis. Ma tâche principale était de faire le HTML/CSS et de tout intégrer dans le gestionnaire de contenu <a href="https://umbraco.com/" target="_blank">Umbraco</a>.</p>
+                  <h4>Logiciels et langages utilisés</h4>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Razor</li>
+                    <li>Un peu de C#</li>
+                    <li>Visual Studio</li>
+                    <li>Figma</li>
+                  </ul>
+                  <h4>Habiletés développées</h4>
+                  <p>Développement de formulaires complexes, configuration du gestionnaire de contenu Umbraco et utilisation du Razor.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="projet">
+            <button class="projetLink">
+              <picture>
+                <source media="(max-width: 480px)" srcset="images/jobdereve-0.25x.jpg">
+                <source media="(max-width: 1920px)" srcset="images/jobdereve-0.5x.jpg">
+                <source media="(min-width: 1921px)" srcset="images/jobdereve-1x.jpg">
+                <img src="images/jobdereve-0.5x.jpg" class="imageProjet">
+              </picture>
+              <div class="middle">
+                <div class="texte">
+                  <h3>Recrutement Nmédia</h3>
+                  <p>Développement web</p>
+                </div>
+              </div>
+            </button>
+      
+            <div class="popinContainer">
+              <div class="popin split">
+                <button class="close"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></button>
+                <div class="gauche">
+                  <picture>
+                    <source media="(max-width: 480px)" srcset="images/jobdereve-long-long-0.5x.jpg">
+                    <source media="(max-width: 1920px)" srcset="images/jobdereve-long-1x.jpg">
+                    <source media="(min-width: 1921px)" srcset="images/jobdereve-long-2x.jpg">
+                    <img src="images/jobdereve-long-1x.jpg">
+                  </picture>
+                </div>
+              
+                <div class="droite">
+                  <h3>Site web de recrutement&nbsp;Nmédia</h3>
+                  <p class="subtitle">Projet professionnel - Développement web</p>
+                  <h4>Description</h4>
+                  <p>Le <a href="https://jobdereve.nmedia.ca/emplois-ti" target="_blank">site de recrutement Nmédia</a> est un site axé sur le recrutement de main d'oeuvre qui contient des articles de blogue et les postes disponibles. Ce qui était le plus difficile dans ce projet était l'arrimage entre le designer et moi-même pour bien gérer le responsive du site web.</p>
+                  <p>Le site a été intégré dans le gestionnaire de contenu Altitude 3, fait par Nmédia. Le CMS ne permet pas l'utilisation des dernières balises HTML5. Le score de performance du site web pourrait donc être affecté.</p>
+                  <h4>Logiciels et langages utilisés</h4>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Visual Studio</li>
+                    <li>Figma</li>
+                  </ul>
+                  <h4>Habiletés développées</h4>
+                  <p>Coordination entre designer et développeur, l'affichage mosaïque et l'implémentation d'un carrousel comportant des zones multiples.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="projet">
+            <button class="projetLink">
+              <picture>
+                <source media="(max-width: 480px)" srcset="images/designform-0.25x.jpg">
+                <source media="(max-width: 1920px)" srcset="images/designform-0.5x.jpg">
+                <source media="(min-width: 1921px)" srcset="images/designform-1x.jpg">
+                <img src="images/designform-0.5x.jpg" class="imageProjet">
+              </picture>
+              <div class="middle">
+                <div class="texte">
+                  <h3>Recherche de style</h3>
+                  <p>Développement web</p>
+                </div>
+              </div>
+            </button>
+      
+            <div class="popinContainer">
+              <div class="popin split">
+                <button class="close"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></button>
+                <div class="gauche">
+                  <picture>
+                    <source media="(max-width: 480px)" srcset="images/designform-long-0.5x.jpg">
+                    <source media="(max-width: 1920px)" srcset="images/designform-long-1x.jpg">
+                    <source media="(min-width: 1921px)" srcset="images/designform-long-2x.jpg">
+                    <img src="images/designform-long-1x.jpg">
+                  </picture>
+                </div>
+              
+                <div class="droite">
+                  <h3>Recherche de style Nmédia</h3>
+                  <p class="subtitle">Projet professionnel - Développement web</p>
+                  <h4>Description</h4>
+                  <p>Les designers de Nmédia demandaient toujours les mêmes informations aux clients avant de débuter un projet. Ils ont donc voulu un <a href="https://design.nmedia.ca/formulaire" target="_blank">formulaire de recherche de style</a> qui pouvait être envoyé aux clients avant une rencontre afin que tous puissent arriver préparés. J'ai fait tout le code HTML, CSS et Javascript.</p>
+                  <p>Le site a été intégré dans le gestionnaire de contenu Altitude 3, fait par Nmédia. Le CMS ne permet pas l'utilisation des dernières balises HTML5. Le score de performance du site web pourrait donc être affecté.</p>
+                  <h4>Logiciels et langages utilisés</h4>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Visual Studio</li>
+                    <li>Figma</li>
+                  </ul>
+                  <h4>Habiletés développées</h4>
+                  <p>Avec ce site web, j'ai pu parfaire mes connaissances pour les formulaires complexes et j'ai appris à faire une page qui défile seulement par paliers.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="projet">
+            <button class="projetLink">
+              <picture>
+                <source media="(max-width: 480px)" srcset="images/groupecloutier-0.25x.jpg">
+                <source media="(max-width: 1920px)" srcset="images/groupecloutier-0.5x.jpg">
+                <source media="(min-width: 1921px)" srcset="images/groupecloutier-1x.jpg">
+                <img src="images/groupecloutier-0.5x.jpg" class="imageProjet">
+              </picture>
+              <div class="middle">
+                <div class="texte">
+                  <h3>Groupe Cloutier</h3>
+                  <p>Développement web</p>
+                </div>
+              </div>
+            </button>
+      
+            <div class="popinContainer">
+              <div class="popin split">
+                <button class="close"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></button>
+                <div class="gauche">
+                  <picture>
+                    <source media="(max-width: 480px)" srcset="images/groupecloutier-long-0.5x.jpg">
+                    <source media="(max-width: 1920px)" srcset="images/groupecloutier-long-1x.jpg">
+                    <source media="(min-width: 1921px)" srcset="images/groupecloutier-long-2x.jpg">
+                    <img src="images/groupecloutier-long-1x.jpg">
+                  </picture>
+                </div>
+              
+                <div class="droite">
+                  <h3>Groupe Cloutier</h3>
+                  <p class="subtitle">Projet professionnel - Développement web</p>
+                  <h4>Description</h4>
+                  <p><a href="https://www.groupecloutier.com/accueil" target="_blank">Groupe Cloutier</a> est un des premiers sites que j'ai intégrés dans mon cheminement professionnel. Il m'a permis d'apprendre comment intégrer un design plus <i>funky</i> qu'un site habituel.</p>
+                  <p>Le site a été intégré dans le gestionnaire de contenu Altitude 3, fait par Nmédia. Le CMS ne permet pas l'utilisation des dernières balises HTML5. Le score de performance du site web pourrait donc être affecté.</p>
+                  <h4>Logiciels et langages utilisés</h4>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Figma</li>
+                  </ul>
+                  <h4>Habiletés développées</h4>
+                  <p>L'intégration d'un design moins conventionnel pour un site de plus grande envergure.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="projet">
+            <button class="projetLink">
+              <picture>
+                <source media="(max-width: 480px)" srcset="images/acq-0.25x.jpg">
+                <source media="(max-width: 1920px)" srcset="images/acq-0.5x.jpg">
+                <source media="(min-width: 1921px)" srcset="images/acq-1x.jpg">
+                <img src="images/acq-0.5x.jpg" class="imageProjet">
+              </picture>
+              <div class="middle">
+                <div class="texte">
+                  <h3>Association du camionnage du Québec</h3>
+                  <p>Développement web</p>
+                </div>
+              </div>
+            </button>
+      
+            <div class="popinContainer">
+              <div class="popin split">
+                <button class="close"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></button>
+                <div class="gauche">
+                  <picture>
+                    <source media="(max-width: 480px)" srcset="images/acq-long-0.5x.jpg">
+                    <source media="(max-width: 1920px)" srcset="images/acq-long-1x.jpg">
+                    <source media="(min-width: 1921px)" srcset="images/acq-long-2x.jpg">
+                    <img src="images/acq-long-1x.jpg">
+                  </picture>
+                </div>
+              
+                <div class="droite">
+                  <h3>Association du camionnage du Québec</h3>
+                  <p class="subtitle">Projet professionnel - Développement web</p>
+                  <h4>Description</h4>
+                  <p><a href="https://www.carrefour-acq.org/accueil" target="_blank">L'association du camionnage du Québec</a> est le premier site de grosse envergure qui contient tout ce qu'un site peut contenir: des articles de blogue, des pages réservées à des utilisateurs, un catalogue de produits et un panier d'achat. J'ai fait tout le HTML, CSS et une partie du Javascript.</p>
+                  <p>Le site a été intégré dans le gestionnaire de contenu Altitude 3, fait par Nmédia. Le CMS ne permet pas l'utilisation des dernières balises HTML5. Le score de performance du site web pourrait donc être affecté.</p>
+                  <h4>Logiciels et langages utilisés</h4>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Visual Studio</li>
+                    <li>Figma</li>
+                  </ul>
+                  <h4>Habiletés développées</h4>
+                  <p>J'ai appris à bien travailler sur un gros projet web tout en communiquant avec un développeur <i>back-end</i>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="projet">
+            <button class="projetLink">
+              <picture>
+                <source media="(max-width: 480px)" srcset="images/cctn-0.25x.jpg">
+                <source media="(max-width: 1920px)" srcset="images/cctn-0.5x.jpg">
+                <source media="(min-width: 1921px)" srcset="images/cctn-1x.jpg">
+                <img src="images/cctn-0.5x.jpg" class="imageProjet">
+              </picture>
+              <div class="middle">
+                <div class="texte">
+                  <h3>CCTN</h3>
+                  <p>Développement web</p>
+                </div>
+              </div>
+            </button>
+      
+            <div class="popinContainer">
+              <div class="popin split">
+                <button class="close"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></button>
+                <div class="gauche">
+                  <picture>
+                    <source media="(max-width: 480px)" srcset="images/cctn-long-0.5x.jpg">
+                    <source media="(max-width: 1920px)" srcset="images/cctn-long-1x.jpg">
+                    <source media="(min-width: 1921px)" srcset="images/cctn-long-2x.jpg">
+                    <img src="images/cctn-long-1x.jpg">
+                  </picture>
+                </div>
+              
+                <div class="droite">
+                  <h3>CCTN</h3>
+                  <p class="subtitle">Projet professionnel - Développement web</p>
+                  <h4>Description</h4>
+                  <p><a href="https://www.cctn.com/accueil" target="_blank">CCTN</a> est un site qui a pour but de présenter des produits et leur documentation. J'ai dû faire preuve de patience car toutes les informations arrivaient au compte-gouttes tout au long du développement.</p>
+                  <p>Le site a été intégré dans le gestionnaire de contenu Altitude 3, fait par Nmédia. Le CMS ne permet pas l'utilisation des dernières balises HTML5. Le score de performance du site web pourrait donc être affecté.</p>
+                  <h4>Logiciels et langages utilisés</h4>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Visual Studio</li>
+                    <li>Figma</li>
+                  </ul>
+                  <h4>Habiletés développées</h4>
+                  <p>J'ai amélioré mon habileté à faire du <i>multitasking</i>, car je devais travailler sur d'autres projets en attendant les informations nécessaires au développement du site.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="projet">
+            <button class="projetLink">
+              <picture>
+                <source media="(max-width: 480px)" srcset="images/unaun-0.25x.jpg">
+                <source media="(max-width: 1920px)" srcset="images/unaun-0.5x.jpg">
+                <source media="(min-width: 1921px)" srcset="images/unaun-1x.jpg">
+                <img src="images/unaun-0.5x.jpg" class="imageProjet">
+              </picture>
+              <div class="middle">
+                <div class="texte">
+                  <h3>Un à Un architectes</h3>
+                  <p>Développement web</p>
+                </div>
+              </div>
+            </button>
+      
+            <div class="popinContainer">
+              <div class="popin split">
+                <button class="close"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></button>
+                <div class="gauche">
+                  <picture>
+                    <source media="(max-width: 480px)" srcset="images/unaun-long-0.5x.jpg">
+                    <source media="(max-width: 1920px)" srcset="images/unaun-long-1x.jpg">
+                    <source media="(min-width: 1921px)" srcset="images/unaun-long-2x.jpg">
+                    <img src="images/unaun-long-1x.jpg">
+                  </picture>
+                </div>
+              
+                <div class="droite">
+                  <h3>Un à Un architectes</h3>
+                  <p class="subtitle">Projet professionnel - Développement web</p>
+                  <h4>Description</h4>
+                  <p><a href="https://www.unaun-architectes.ca/accueil" target="_blank">Un à Un architectes</a> est le premier site web professionnel que j'ai fait. Sa simplicité m'a permis de bien comprendre les bases sans me surcharger.</p>
+                  <p>Le site a été intégré dans le gestionnaire de contenu Altitude 3, fait par Nmédia. Le CMS ne permet pas l'utilisation des dernières balises HTML5. Le score de performance du site web pourrait donc être affecté.</p>
+                  <h4>Logiciels et langages utilisés</h4>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript (JQuery)</li>
+                    <li>Visual Studio</li>
+                    <li>Figma</li>
+                  </ul>
+                  <h4>Habiletés développées</h4>
+                  <p>J'ai parfait mes compétences acquises lors de mon parcours scolaire, c’est-à-dire le HTML, CSS et Javascript (JQuery).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="projet">
+            <button class="projetLink">
+              <img srcset="images/ProjetCinescitis1-1x.jpg 1x, images/ProjetCinescitis1-2x.jpg 2x" src="images/ProjetCinescitis1-1x.jpg" class="imageProjet">
+              <div class="middle">
+                <div class="texte">
+                  <h3>Cinéscitis</h3>
+                  <p>Développement web</p>
+                </div>
+              </div>
+            </button>
+      
+            <div class="popinContainer">
+              <div class="popin split">
+                <button class="close"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></button>
+                <div class="gauche">
+                  <img src="images/ProjetCinescitis2.jpg" alt="page web du projet Cinéscitis">
+                  <img src="images/ProjetCinescitis3.jpg" alt="page web du projet Cinéscitis">
+                </div>
+              
+                <div class="droite">
+                  <h3>Cinéscitis</h3>
+                  <p class="subtitle">Projet scolaire - Création de site web</p>
+                  <h4>Description</h4>
+                  <p><a href="/portfolio/Cinescitis/index.html" target="_blank">Cinéscitis</a> est un projet web scolaire dont le but était de réaliser un site web de A à Z (UI, design et développement web) utilisant l'API de <a href="http://themoviedb.org" target="_blank">themoviedb.org</a> pour les textes et les images. La zone commentaires n'était pas incluse dans le devis.</p>
+                  <h4>Logiciels et langages utilisés</h4>
+                  <ul>
+                    <li>Photoshop</li>
+                    <li>Html</li>
+                    <li>CSS avec SASS</li>
+                    <li>Javascript (JQuery)</li>
+                    <li>Php storm</li>
+                  </ul>
+                  <h4>Habiletés développées</h4>
+                  <p>J'ai pu apprendre comment créer un site web à partir de zéro et comment faire appel à un API avec JQuery.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="propos">
+        <h2>À Propos</h2>
+        <p class="sousTitre">(J'ai grossis un peu, ne faites pas le saut en entrevue)</p>
+        <div class="wrapper" id="proposFlex">
+          <div>
             <img srcset="images/moi-1x.png 1x, images/moi-2x.png 2x"
-                 src="images/moi-1x.png"
-                 alt="Photo de profile de Loïc Gamache">
+              src="images/moi-1x.png"
+              alt="Photo de profil de Loïc Gamache">
+          </div>
+          <div>
+            <p>J’adore me  dépasser et je recherche la perfection dans ce qui me passionne, c’est-à-dire le développement web et les jeux vidéos. Je sais également faire bouger uniquement mon petit&nbsp;orteil.</p>
+          </div>
         </div>
-        <div>
-            <p>Je suis friand de technologie et j’adore me dépasser. De plus, je recherche la perfection dans ce qui me
-                passionne, c’est-à-dire la conception web, l’animation 3D et bien évidemment les jeux vidéos. J'ai
-                l'oeil
-                aiguisé en ce qui a trait au design, je sais reconnaître les belles choses des mauvaises. Je sais
-                également
-                faire bouger uniquement mon petit orteil.</p>
-        </div>
-    </div>
-</div>
-
-<div id="contact">
-    <h2>Me contacter</h2>
-    <p class="sousTitre">(Car vous avez désespérément besoin de quelqu'un)</p>
-    <div id="contactOptions" class="wrapper">
-        <div class="option">
+      </section>
+      
+      <section id="contact">
+        <h2>Me contacter</h2>
+        <p class="sousTitre">(Car vous avez désespérément besoin de quelqu'un)</p>
+        <div class="contactOptions" class="wrapper">
+          <div class="option">
             <a href="mailto:loicgamache@outlook.com" target="_blank">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <p>loicgamache@outlook.com</p>
+              <svg width="80" height="80" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
+              <p>loicgamache@outlook.com</p>
             </a>
-        </div>
-
-        <div class="option">
+          </div>
+      
+          <div class="option">
             <a href="LoicGamacheCurriculumvitae.pdf" target="_blank">
-                <i class="fa fa-file-text" aria-hidden="true"></i>
-                <p>Télécharger mon cv</p>
+              <svg width="80" height="80" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-alt" class="svg-inline--fa fa-file-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path></svg>
+              <p>Télécharger mon cv</p>
             </a>
-        </div>
-
-        <div class="option">
+          </div>
+      
+          <div class="option">
             <a href="https://www.linkedin.com/in/lo%C3%AFc-gamache-576b5a14b/" target="_blank">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-                <p>Voir mon LinkedIn</p>
+              <svg width="80" height="80" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+              <p>Voir mon LinkedIn</p>
             </a>
+          </div>
         </div>
-    </div>
-</div>
+      </section>
+    </main>
 
-<footer><p>Loïc Gamache - Tous droits réservés - &#169; 2017</p></footer>
-
-
-</body>
+    <footer>
+      <p>Loïc Gamache - Tous droits réservés - &#169; 2021</p>
+    </footer>
+  </body>
 </html>
