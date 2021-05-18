@@ -39,6 +39,12 @@ h3 {
   line-height: 0.85;
 }
 
+section > p, section > h2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
 .sousTitre {
   margin: 0 0 50px 0;
   font-family: "Open Sans Thin", sans-serif;
@@ -73,7 +79,7 @@ img {
 
 .wrapper {
   max-width: 1200px;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
 }
 
 button:focus, a:focus {
@@ -427,22 +433,32 @@ button:focus, a:focus {
   background-attachment: fixed;
 }
 
-#proposFlex {
+#propos .flexContainer {
   display: flex;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
 
-#proposFlex div {
-  width: 50%;
+#propos .flexContainer .imgContainer {
+  display: flex;
+  align-items: flex-end;
 }
 
-#proposFlex img {
-  max-width: 50%;
-  display: block;
-  float: right;
+#propos .flexContainer .imgContainer img {
+  max-width: 300px;
 }
 
-#proposFlex p {
-  margin: 100px 20px 0 0;
+#propos .flexContainer .textContainer {
+  max-width: 700px;
+  padding: 4rem 0 0 4rem;
+  box-sizing: border-box;
+}
+
+#propos .flexContainer .textContainer p {
   font-size: 1.5rem;
 }
 
@@ -500,28 +516,33 @@ footer p {
     font-size: 12px;
   }
 
-  header .menu li a:before {
-    height: .75rem;
+  header .menu li a:before, .menu li:hover a:before {
+    margin-top: 0.75rem;
   }
 
   header .menu {
     font-size: 1.5rem;
-    left: -40vw;
-    transition-property: right, left;
-    transition-duration: 2s;
-    -webkit-transition-property: right, left; /* Safari */
-    -webkit-transition-duration: 0.5s; /* Safari */
+    left: 0;
+    transition: all 0.5s ease-in-out;
     position:fixed;
     background: rgba(0,0,0,0.5);
     top: 0;
-    padding-top: 40px;
     margin: 0;
-    width: 30vw;
+    width: 30rem;
+    max-width: 100%;
     height: 100vh;
+    transform: translateX(-100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header .menu li {
+    margin-bottom: 0;
   }
 
   header .menu.open {
-    left: 0 !important;
+    transform: none;
   }
 
   header .hamburger {
@@ -582,9 +603,29 @@ footer p {
   .projetsContainer .projet .popinContainer .popin.split .gauche, .projetsContainer .projet .popinContainer .popin.split .droite {
     width: 100%;
   }
+
+  #propos .flexContainer .imgContainer {
+    width: 35%;
+    flex-shrink: 0;
+  }
+
+  #propos .flexContainer .imgContainer img {
+    max-width: 100%;
+  }
+
+  #propos .flexContainer .textContainer {
+    padding: 0 0 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 730px){
+  h2 {
+    padding-top: 5rem;
+  }
+
   .scrollToAction {
     width: 10%;
   }
@@ -592,6 +633,10 @@ footer p {
   .contactOptions .option {
     width: 100%;
     margin-bottom: 0;
+  }
+
+  .contactOptions .option:first-child {
+    margin-top: 0;
   }
 
   #proposFlex div {
@@ -603,9 +648,8 @@ footer p {
     margin-bottom: 20px;
   }
 
-  .menu {
-    left: -110vw;
-    width: 100vw;
+  header .menu {
+    width: 100%;
   }
 }
 
@@ -626,6 +670,34 @@ footer p {
 
   .contenu div {
     width: 90%;
+  }
+}
 
+@media screen and (max-width: 400px) {
+  #competences .contenu {
+    display: block;
+    padding: 0 2rem;
+  }
+
+  #competences .contenu > div {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  #competences .contenu > div:last-child {
+    margin-bottom: 0;
+  }
+
+  #propos .flexContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #propos .flexContainer .imgContainer {
+    width: 60%;
+  }
+
+  #propos .flexContainer .textContainer {
+    padding: 0;
   }
 }
