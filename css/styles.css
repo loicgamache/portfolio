@@ -449,25 +449,28 @@ button:focus, a:focus {
 #propos .flexContainer {
   display: flex;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
   max-width: 1200px;
   width: 100%;
   padding: 0 2rem;
   box-sizing: border-box;
+  padding-bottom: 100px;
 }
 
 #propos .flexContainer .imgContainer {
-  display: flex;
-  align-items: flex-end;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 #propos .flexContainer .imgContainer img {
   max-width: 300px;
+  width: 100%;
+  aspect-ratio: 1;
 }
 
 #propos .flexContainer .textContainer {
   max-width: 700px;
-  padding: 4rem 0 0 4rem;
+  padding: 0 0 0 4rem;
   box-sizing: border-box;
 }
 
@@ -574,9 +577,12 @@ footer p {
     padding-bottom: 5rem;
   }
 
+  #competences .contenu {
+    row-gap: 2rem;
+  }
+
   #competences .contenu div {
     width: 40%;
-    margin-bottom: 2rem;
   }
 }
 
@@ -615,6 +621,10 @@ footer p {
 
   .projetsContainer .projet .popinContainer .popin.split .gauche, .projetsContainer .projet .popinContainer .popin.split .droite {
     width: 100%;
+  }
+
+  #propos .flexContainer {
+    padding-bottom: 5rem;
   }
 
   #propos .flexContainer .imgContainer {
