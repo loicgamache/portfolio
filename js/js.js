@@ -1,7 +1,18 @@
+var hamburger = document.querySelector("header .hamburger");
+var menu = document.querySelector("header .menu");
+
 // Hamburger menu toggle
-document.querySelector("header .hamburger").addEventListener('click', function() {
+hamburger.addEventListener('click', function() {
   this.classList.toggle("close");
-  document.querySelector("header .menu").classList.toggle("open");
+  menu.classList.toggle("open");
+});
+
+// Close Hamburger menu when clicking link
+document.querySelectorAll('header .menu a').forEach(item => {
+  item.addEventListener('click', () => {
+    menu.classList.remove("open");
+    hamburger.classList.remove("close");
+  });
 });
 
 // Open and close projects popins
